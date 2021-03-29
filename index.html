@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+}
+.box {
+    padding: 0 5px 0 5px;
+}
+
+.widey {
+  padding:0px;
+height: 300px;
+  float:left;
+  width:100%; /* The width is 20%, by default */
+margin-top: 2%;
+
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+  height: 100px;
+}
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  height: 200px;
+margin-top: 2%;
+}
+
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 0px;
+  height: 150px; /* Should be removed. Only for demonstration */
+margin-top: 2%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 1000px) {
+  .column, .column1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 760px) {
+ .column2  {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 320px) {
+ .column2  {
+    width: 25%;
+  }
+}
+
+
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+   
+  </div>
+  <div class="column" style="background-color:#bbb;">
+   
+  </div>
+</div>
+
+<div class="widey" style="background-color:#aaa;">
+  
+</div>
+
+
+<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+    
+  </div>
+  <div class="column1" style="background-color:#bbb;">
+   
+  </div>
+  <div class="column1" style="background-color:#ccc;">
+    
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="column2" style="background-color:#aaa;">
+    
+  </div>
+  <div class="column2" style="background-color:#bbb;">
+    
+  </div>
+  <div class="column2" style="background-color:#ccc;">
+    
+  </div>
+  <div class="column2" style="background-color:#ddd;">
+    
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
+</html>
